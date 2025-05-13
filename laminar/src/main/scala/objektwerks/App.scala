@@ -1,10 +1,11 @@
 package objektwerks
 
-import scala.scalajs.js.annotation.JSExportTopLevel
+import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
 
 @JSExportTopLevel("App")
 object App:
-  def main(args: Array[String]): Unit =
+  @JSExport
+  def init(): Unit =
     LineChart("line-chart")
     BarChart("bar-chart")
     TimeSeriesChart("time-series-chart")
