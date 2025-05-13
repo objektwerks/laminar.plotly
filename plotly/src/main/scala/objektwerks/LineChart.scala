@@ -27,3 +27,5 @@ object LineChart:
       layout = layout,
       config = config
     )
+
+    ()

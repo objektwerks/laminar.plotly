@@ -22,3 +22,5 @@ object BarChart:
       layout = layout,
       config = config
     )
+
+    ()
