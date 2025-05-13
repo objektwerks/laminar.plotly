@@ -17,8 +17,8 @@ object TimeSeriesChart:
     val config = Config(responsive = true)
 
     Plotly.plot(
-      path = id,
-      traces = data,
+      div = id,
+      data = data,
       layout = layout,
       config = config
     )

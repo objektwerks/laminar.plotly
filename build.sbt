@@ -15,7 +15,8 @@ lazy val laminar = project.in(file("laminar"))
   ).dependsOn(plotly)
 
 lazy val plotly = project.in(file("plotly"))
-  .settings(common)
+.enablePlugins(ScalaJSPlugin)
+.settings(common)
   .settings(
     scalaVersion := "3.7.1-RC1",
     libraryDependencies ++= Seq(
