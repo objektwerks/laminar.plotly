@@ -20,6 +20,8 @@ lazy val plotly = project.in(file("plotly"))
   .settings(
     scalaVersion := "3.7.1-RC1",
     libraryDependencies ++= Seq(
-      ("org.plotly-scala" %%% "plotly-render" % "0.8.5").cross(CrossVersion.for3Use2_13)
+      ("org.plotly-scala" %%% "plotly-render" % "0.8.5")
+      .cross(CrossVersion.for3Use2_13)
+      .exclude("org.scala-js", "scalajs-dom_sjs1_2.13")
     )
   )
