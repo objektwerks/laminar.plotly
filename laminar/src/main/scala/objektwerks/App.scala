@@ -12,6 +12,7 @@ import org.scalajs.dom
   val container = dom.document.querySelector("#container")
 
   val plots = div(
+    h1(textAlign := "center", "Plotly Charts"),
     div( idAttr(barChartId) ),
     div( idAttr(lineChartId) ),
     div( idAttr(timeSeriesChartId) )
