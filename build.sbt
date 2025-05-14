@@ -1,5 +1,3 @@
-import org.scalajs.linker.interface.ModuleSplitStyle
-
 lazy val versionOfScala = "3.7.1-RC1"
 lazy val laminarVersion = "17.2.1"
 lazy val plotlyVersion = "0.8.5"
