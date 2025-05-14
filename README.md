@@ -24,18 +24,18 @@ Dev
 ---
 >Edits are reflected in both sessions.
 1. sbt ( new session )
-2. ~ fastLinkJS copyMainJs
+2. ~ fastLinkJS copyFastOptMainJs
 3. npm run dev ( new session )
 
 Package
 -------
-1. sbt clean compile fullLinkJS copyMainJs
+1. sbt clean compile fullLinkJS copyFullOptMainJs
 2. npm run build
 >See **dist** directory.
 
 Browser
 -------
-1. sbt clean compile fastLinkJS copyMainJs
+1. sbt clean compile fastLinkJS copyFastOptMainJs
 2. npm run dev
 
 Reference
