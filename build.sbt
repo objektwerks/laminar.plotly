@@ -10,7 +10,6 @@ lazy val laminar = project.in(file("laminar"))
   .settings(common)
   .settings(
     scalaVersion := "3.7.1-RC1",
-    mainClass := Some("objektwerks.App"),
     libraryDependencies ++= Seq(
       "com.raquo" %%% "laminar" % "17.2.1"
     ),
