@@ -9,3 +9,4 @@ target/
 laminar/target/
 plotly/target/
 sbt-launch.jar
+main.js.map
