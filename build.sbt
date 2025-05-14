@@ -1,6 +1,7 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
 lazy val scalaVersion = "3.7.1-RC1"
+lazy val laminarVersion = "17.2.1"
 
 lazy val common = Defaults.coreDefaultSettings ++ Seq(
   organization := "objektwerks",
@@ -15,7 +16,7 @@ lazy val laminar = project.in(file("laminar"))
     scalaVersion := scalaVersion,
     scalaJSUseMainModuleInitializer := true,
     libraryDependencies ++= Seq(
-      "com.raquo" %%% "laminar" % "17.2.1"
+      "com.raquo" %%% "laminar" % laminarVersion
     )
   ).dependsOn(plotly)
 
