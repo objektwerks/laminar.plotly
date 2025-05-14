@@ -24,7 +24,7 @@ Dev
 ---
 >Edits are reflected in both sessions.
 1. sbt ( new session )
-2. ~ fastLinkJS
+2. ~ fastLinkJS copyMainJs
 3. npm run dev ( new session )
 
 Package
