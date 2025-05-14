@@ -41,7 +41,7 @@ lazy val plotly = project.in(file("plotly"))
     Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING)
   }
 
-  lazy val copyFullOpMainJs = taskKey[Unit]("Copy laminar main.js to root main.js.")
+  lazy val copyFullOptMainJs = taskKey[Unit]("Copy laminar main.js to root main.js.")
   copyMainJs := {
     import java.nio.file.*
     
