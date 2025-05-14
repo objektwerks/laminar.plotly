@@ -50,4 +50,5 @@ Reference
 * [Laminar](https://laminar.dev/)
 * [plotly-scala](https://github.com/alexarchambault/plotly-scala)
 * [plotly.js](https://www.npmjs.com/package/plotly.js/v/1.47.4?activeTab=versions)
+* [plotly](https://github.com/objektwerks/plotly)
 * [ScalaJs-Vite Tutorial](https://www.scala-js.org/doc/tutorial/scalajs-vite.html)
