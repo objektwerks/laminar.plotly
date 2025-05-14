@@ -22,5 +22,3 @@ object TimeSeriesChart:
       layout = layout,
       config = config
     )
-
-    ()
