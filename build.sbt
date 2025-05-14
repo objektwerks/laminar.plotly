@@ -9,7 +9,6 @@ lazy val common = Defaults.coreDefaultSettings ++ Seq(
 
 lazy val laminar = project.in(file("laminar"))
   .enablePlugins(ScalaJSPlugin)
-  .aggregate(plotly)
   .settings(common)
   .settings(
     scalaVersion := versionOfScala,
