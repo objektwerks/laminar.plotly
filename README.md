@@ -17,7 +17,7 @@ Update
 Build
 -----
 1. npm install ( only when package.json changes )
-2. sbt clean compile fastLinkJS copyFastOpMainJs
+2. sbt clean compile fastLinkJS copyFastOptMainJs
 >See **target/public** directory.
 
 Dev
