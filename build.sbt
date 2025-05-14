@@ -13,10 +13,7 @@ lazy val laminar = project.in(file("laminar"))
     libraryDependencies ++= Seq(
       "com.raquo" %%% "laminar" % "17.2.1"
     ),
-    scalaJSLinkerConfig ~= {
-      _.withModuleKind(ModuleKind.ESModule)
-        .withModuleSplitStyle(ModuleSplitStyle.SmallModulesFor(List("objektwerks")))
-    }
+    scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) }
   ).dependsOn(plotly)
 
 lazy val plotly = project.in(file("plotly"))
