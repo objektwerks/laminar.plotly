@@ -7,13 +7,14 @@ lazy val common = Defaults.coreDefaultSettings ++ Seq(
 
 lazy val laminar = project.in(file("laminar"))
   .enablePlugins(ScalaJSPlugin)
+  .aggregate(plotly)
   .settings(common)
   .settings(
     scalaVersion := "3.7.1-RC1",
+    scalaJSUseMainModuleInitializer := true,
     libraryDependencies ++= Seq(
       "com.raquo" %%% "laminar" % "17.2.1"
-    ),
-    scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.ESModule) }
+    )
   ).dependsOn(plotly)
 
 lazy val plotly = project.in(file("plotly"))
