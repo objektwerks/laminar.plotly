@@ -1,6 +1,6 @@
 import org.scalajs.linker.interface.ModuleSplitStyle
 
-lazy val scalaVersion = "3.7.1-RC1"
+lazy val versionOfScala = "3.7.1-RC1"
 lazy val laminarVersion = "17.2.1"
 lazy val plotlyVersion = "0.8.5"
 
@@ -14,7 +14,7 @@ lazy val laminar = project.in(file("laminar"))
   .aggregate(plotly)
   .settings(common)
   .settings(
-    scalaVersion := scalaVersion,
+    scalaVersion := versionOfScala,
     scalaJSUseMainModuleInitializer := true,
     libraryDependencies ++= Seq(
       "com.raquo" %%% "laminar" % laminarVersion
@@ -25,7 +25,7 @@ lazy val plotly = project.in(file("plotly"))
 .enablePlugins(ScalaJSPlugin)
 .settings(common)
   .settings(
-    scalaVersion := scalaVersion,
+    scalaVersion := versionOfScala,
     libraryDependencies ++= Seq(
       ("org.plotly-scala" %%% "plotly-render" % plotlyVersion)
       .cross(CrossVersion.for3Use2_13)
