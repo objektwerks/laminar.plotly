@@ -1,6 +1,6 @@
 Laminar Plotly
 --------------
->Laminar-Plotly app using ScalaJs and Scala 3.
+>Laminar-Plotly app using ScalaJs and Scala 3, proving that a Scala 3 Laminar app can use a Scala 2 Plotly-Scala library.
 
 Install
 -------
