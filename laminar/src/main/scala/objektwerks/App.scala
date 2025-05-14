@@ -1,10 +1,10 @@
 package objektwerks
 
-import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
+import scala.scalajs.js
+import scala.scalajs.js.annotation.JSExportTopLevel
 
 @JSExportTopLevel("App")
-object App:
-  @JSExport
+class App() extends js.Object:
   def init(): Unit =
     LineChart("line-chart")
     BarChart("bar-chart")
