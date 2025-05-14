@@ -1,10 +1,11 @@
 lazy val laminarVersion = "17.2.1"
 lazy val plotlyVersion = "0.8.5"
+lazy val scalaDirectory = "scala-3.7.1-RC1"
 
 lazy val common = Defaults.coreDefaultSettings ++ Seq(
   organization := "objektwerks",
   version := "2.0.0",
-  scalaVersion :=  "3.7.1-RC1"
+  scalaVersion := "3.7.1-RC1"
 )
 
 lazy val laminar = project.in(file("laminar"))
@@ -32,7 +33,7 @@ lazy val plotly = project.in(file("plotly"))
   copyFastOptMainJs := {
     import java.nio.file.*
     
-    val source = Paths.get("./laminar/target/scala-3.7.1-RC1/laminar-fastopt/main.js")
+    val source = Paths.get(s"./laminar/target/${scalaDirectory}/laminar-fastopt/main.js")
     val target = Paths.get("./main.js")
   
     println(s"[copyFastOptMainJs] source: $source")
@@ -45,7 +46,7 @@ lazy val plotly = project.in(file("plotly"))
   copyFullOptMainJs := {
     import java.nio.file.*
     
-    val source = Paths.get("./laminar/target/scala-3.7.1-RC1/laminar-opt/main.js")
+    val source = Paths.get(s"./laminar/target/${scalaDirectory}/laminar-opt/main.js")
     val target = Paths.get("./main.js")
   
     println(s"[copyFullOptMainJs] source: $source")
