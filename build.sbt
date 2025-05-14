@@ -4,7 +4,7 @@ lazy val scalaDirectory = "scala-3.7.1-RC1"
 
 lazy val common = Defaults.coreDefaultSettings ++ Seq(
   organization := "objektwerks",
-  version := "2.0.0",
+  version := "3.0.0",
   scalaVersion := "3.7.1-RC1"
 )
 
