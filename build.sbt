@@ -38,7 +38,7 @@ lazy val plotly = project.in(file("plotly"))
     import java.nio.file.*
   
     val rootDir: String = "./"
-    val mainJsPath: String = s"${rootDir}/${main.js}"
+    val mainJsPath: String = s"${rootDir}/main.js"
   
     val source: Path = Path.get(s"./laminar/target/${versionOfScala}/laminar-fastopt/main.js")
     val target: Path = Paths.get(mainJsPath)
