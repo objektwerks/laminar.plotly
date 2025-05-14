@@ -36,12 +36,9 @@ lazy val plotly = project.in(file("plotly"))
   lazy val copyMainJs = taskKey[Unit]("Copy laminar main.js to root main.js.")
   copyMainJs := {
     import java.nio.file.*
-  
-    val rootDir: String = "./"
-    val mainJsPath: String = s"${rootDir}/main.js"
-  
-    val source: Path = Path.get(s"./laminar/target/${versionOfScala}/laminar-fastopt/main.js")
-    val target: Path = Paths.get(mainJsPath)
+    
+    val source: Path = Paths.get(s"./laminar/target/${versionOfScala}/laminar-fastopt/main.js")
+    val target: Path = Paths.get("./main.js")
   
     println(s"[copyMainJs] source: $source")
     println(s"[copyMainJs] target: $target")
