@@ -17,7 +17,7 @@ Update
 Build
 -----
 1. npm install ( only when package.json changes )
-2. sbt clean compile fastLinkJS
+2. sbt clean compile fastLinkJS copyMainJs
 >See **target/public** directory.
 
 Dev
@@ -29,13 +29,13 @@ Dev
 
 Package
 -------
-1. sbt clean compile fullLinkJS
+1. sbt clean compile fullLinkJS copyMainJs
 2. npm run build
 >See **dist** directory.
 
 Browser
 -------
-1. sbt clean compile fastLinkJS
+1. sbt clean compile fastLinkJS copyMainJs
 2. npm run dev
 
 Reference
