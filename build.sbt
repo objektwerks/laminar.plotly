@@ -37,7 +37,7 @@ lazy val plotly = project.in(file("plotly"))
   copyMainJs := {
     import java.nio.file.*
     
-    val source: Path = Paths.get(s"./laminar/target/${versionOfScala}/laminar-fastopt/main.js")
+    val source: Path = Paths.get("./laminar/target/scala-3.7.1-RC1/laminar-fastopt/main.js")
     val target: Path = Paths.get("./main.js")
   
     println(s"[copyMainJs] source: $source")
