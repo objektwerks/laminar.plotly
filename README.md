@@ -2,6 +2,13 @@ Laminar Plotly
 --------------
 >Laminar-Plotly app using ScalaJs and Scala 3, proving that a Scala 3 Laminar app can use a Scala 2 Plotly-Scala library.
 
+Charts
+------
+>See ```./charts``` for images of:
+1. BarChart
+2. LineChart
+3. TimeSeriesChart
+
 Install
 -------
 1. brew install node
