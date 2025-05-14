@@ -32,11 +32,11 @@ lazy val plotly = project.in(file("plotly"))
   copyFastOptMainJs := {
     import java.nio.file.*
     
-    val source: Path = Paths.get("./laminar/target/scala-3.7.1-RC1/laminar-fastopt/main.js")
-    val target: Path = Paths.get("./main.js")
+    val source = Paths.get("./laminar/target/scala-3.7.1-RC1/laminar-fastopt/main.js")
+    val target = Paths.get("./main.js")
   
-    println(s"[copyMainJs] source: $source")
-    println(s"[copyMainJs] target: $target")
+    println(s"[copyFastOptMainJs] source: $source")
+    println(s"[copyFastOptMainJs] target: $target")
   
     Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING)
   }
