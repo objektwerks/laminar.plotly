@@ -1,6 +1,6 @@
 lazy val laminarVersion = "17.2.1"
 lazy val plotlyVersion = "0.8.5"
-lazy val scalaDirectory = "scala-3.7.1-RC2"
+lazy val scalaDirectory = "scala-3.7.2-RC2"
 
 lazy val common = Defaults.coreDefaultSettings ++ Seq(
   organization := "objektwerks",
