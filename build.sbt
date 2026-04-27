@@ -5,7 +5,7 @@ lazy val scalaDirectory = "scala-3.8.3"
 lazy val common = Defaults.coreDefaultSettings ++ Seq(
   organization := "objektwerks",
   version := "3.0.0",
-  scalaVersion := "3.8.4-RC1"
+  scalaVersion := "3.8.4-RC2"
 )
 
 lazy val laminar = project.in(file("laminar"))
