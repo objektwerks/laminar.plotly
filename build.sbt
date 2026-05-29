@@ -1,11 +1,11 @@
 lazy val laminarVersion = "17.2.1"
 lazy val plotlyVersion = "0.8.5"
-lazy val scalaDirectory = "scala-3.8.3"
+lazy val scalaDirectory = "scala-3.8.4"
 
 lazy val common = Defaults.coreDefaultSettings ++ Seq(
   organization := "objektwerks",
   version := "3.0.0",
-  scalaVersion := "3.8.4-RC2"
+  scalaVersion := "3.8.4-RC3"
 )
 
 lazy val laminar = project.in(file("laminar"))
